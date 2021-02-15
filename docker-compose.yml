@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - $DOCKER_PORT:$PORT
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./public:/usr/src/app/public
+    environment: 
+      - PORT:$PORT
