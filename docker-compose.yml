@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - $PORT:$PORT
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./public:/usr/src/app/public
