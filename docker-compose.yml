@@ -2,7 +2,7 @@ services:
   frontend:
     build: .
     ports:
-      - $DOCKER_PORT:$PORT
+      - 3000:$PORT
     volumes:
       - ./src:/usr/src/app/src
       - ./public:/usr/src/app/public
